@@ -14,38 +14,54 @@
 <body>
   <div class="app">
     <header class="header">
-      <nav class="navbar grid">
-        <ul class="navbar__list">
-          <li class="navbar__item navbar__item--separate">
-            Vào cửa hàng trên ứng dụng TickID
-          </li>
-          <li class="navbar__item">
-            <span class="navbar__title--no-poniter">Kết nối</span> 
-            <a href="#" class="navbar__icon-link">
-              <i class="navbar__icon fab fa-facebook"></i>
-            </a>
-            <a href="#" class="navbar__icon-link">
-              <i class="navbar__icon fab fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-        <ul class="navbar__list">
-          <li class="navbar__item">
-            <a href="#" class="navbar__item-link">
-              <i class="navbar__icon fas fa-bell"></i>
-              Thông báo  
-            </a>
-          </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__item-link">
-              <i class="navbar__icon far fa-question-circle"></i>
-              Trợ giúp
-            </a>
-          </li>
-          <li class="navbar__item navbar__item--bold navbar__item--separate">Đăng ký</li>
-          <li class="navbar__item navbar__item--bold">Đăng nhập</li>
-        </ul>
-      </nav>
+      <div class="grid">
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__item navbar__item--show-qr navbar__item--separate">
+              Vào cửa hàng trên ứng dụng TickID
+              <div class="header__qr">
+                <img src="./assets//img/qr_code.png" alt="QR code" class="header__qr-img">
+                <div class="header__qr-apps">
+                  <a href="" class="header__qr-link">
+                    <img src="./assets//img/google_play.png" alt="Google Play" class="header__qr-dowload-img"></img>
+                  </a>
+                  <a href="" class="header__qr-link">
+                    <img src="./assets//img/apple.png" alt="Appstore" class="header__qr-dowload-img"></img>            
+                  </a>
+                  <a href="" class="header__qr-link">
+                    <img src="./assets//img/app_gallery.png" alt="App Gallery" class="header__qr-dowload-img"></img>    
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="navbar__item">
+              <span class="navbar__title--no-poniter">Kết nối</span> 
+              <a href="#" class="navbar__icon-link">
+                <i class="navbar__icon fab fa-facebook"></i>
+              </a>
+              <a href="#" class="navbar__icon-link">
+                <i class="navbar__icon fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="#" class="navbar__item-link">
+                <i class="navbar__icon fas fa-bell"></i>
+                Thông báo  
+              </a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__item-link">
+                <i class="navbar__icon far fa-question-circle"></i>
+                Trợ giúp
+              </a>
+            </li>
+            <li class="navbar__item navbar__item--bold navbar__item--separate">Đăng ký</li>
+            <li class="navbar__item navbar__item--bold">Đăng nhập</li>
+          </ul>
+        </nav>
+      </div>
 
     </header>
 

@@ -31,3 +31,14 @@ html {
   display: flex;
   flex-flow: row wrap;
 }
+
+/* Animation */
+
+@keyframes fateIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
