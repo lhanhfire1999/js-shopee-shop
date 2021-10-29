@@ -87,9 +87,9 @@
   width: 186px;
 
   border-radius: 4px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   background-color: var(--white-color);
   padding: 4px;
+  box-shadow: var(--box-shadow);
 
   animation: fateIn ease-in 0.3s;
   display: none;
@@ -125,13 +125,48 @@
 }
 
 /* Header Notify */
-.header__notify {
-  width: 404px;
+
+.navbar__item--show-notify:hover .header__notify {
+  display: block;
+}
+
+.header__notify::before {
+  display: block;
+  content: "";
+  border-width: 20px 24px;
+  border-style: solid;
+  border-color: transparent transparent var(--white-color) transparent;
   position: absolute;
-  top: 100%;
+  top: -32px;
+  right: 20px;
+}
+
+.header__notify::after {
+  position: absolute;
+  height: 20px;
+  width: 88px;
+  top: -20px;
+  right: 0;
+
+  /* background-color: red; */
+  content: "";
+  display: block;
+}
+
+.header__notify {
+  position: absolute;
+  top: 150%;
+  right: 0;
+  width: 404px;
+
   border: 1px solid #d3d3d3;
   background-color: var(--white-color);
-  right: 0;
+  box-shadow: var(--box-shadow);
+
+  transform-origin: calc(100% - 20px) top; /*decision the point to scale*/
+  animation: headerNotifyGrowth ease-in 0.2s;
+  will-change: opacity, transform;
+  display: none;
 }
 .header__notify-header {
   height: 40px;
@@ -140,10 +175,14 @@
 
 .header__notify-header > h3 {
   line-height: 40px;
-  color: #999;
+  margin: 0 0 0 12px;
+
   font-weight: 400;
   font-size: 1.4rem;
-  margin: 0 0 0 12px;
+  color: #999;
+
+  cursor: default;
+  user-select: none;
 }
 
 .header__notify-list {
@@ -176,7 +215,7 @@
 }
 .header__notify-name {
   font-size: 1.4rem;
-  color: var(--black-color);
+  color: var(--text-color);
   font-weight: 400;
 }
 .header__notify-desc {
@@ -186,11 +225,12 @@
 }
 
 .header__notify-footer {
-  text-align: center;
 }
 .header__notify-footer-btn {
   display: block;
-  padding: 10px 0;
+  padding: 8px 0;
+  text-align: center;
+  font-weight: 400;
   text-decoration: none;
   color: var(--black-color);
 }
