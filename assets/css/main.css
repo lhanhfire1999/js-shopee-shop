@@ -246,6 +246,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+
   display: flex;
 }
 .modal__overlay {
@@ -262,5 +263,6 @@
   margin: auto;
   border-radius: 4px;
   background-color: var(--white-color);
+
   z-index: 1;
 }
