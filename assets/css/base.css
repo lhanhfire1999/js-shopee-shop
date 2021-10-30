@@ -4,6 +4,7 @@
   --black-color: #000;
   --text-color: #333;
   --box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  --border-color: #dbdbdb;
 }
 
 * {
@@ -32,6 +33,96 @@ html {
 .grid__row {
   display: flex;
   flex-flow: row wrap;
+}
+
+/* Button Style */
+.btn {
+  display: inline-block;
+  min-width: 145px;
+  padding: 12px 48px;
+  font-size: 1.4rem;
+
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+
+  text-decoration: none;
+  color: var(--text-color);
+  transition: opacity 0.2s ease;
+
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* Modifier */
+.btn--size-l {
+  padding: 16px 56px;
+}
+
+.btn--size-s {
+  padding: 8px 32px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn + .btn {
+  margin-left: 16px;
+}
+
+.btn--success {
+  background-color: #71be34;
+}
+
+.btn--warn {
+  background-color: #ffb702;
+}
+
+.btn--danger {
+  background-color: #ff623d;
+}
+
+.btn--disabled,
+.btn[disabled] {
+  opacity: 0.5 !important;
+  pointer-events: none;
+}
+
+.btn.btn--primary {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+.btn--align-center {
+  display: flex;
+  align-items: center;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+}
+.modal__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+  /* position: relative;
+  width: 300px;
+  height: 300px; */
+  margin: auto;
+  position: relative;
+  z-index: 1;
 }
 
 /* Animation */
