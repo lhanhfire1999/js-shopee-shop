@@ -177,6 +177,7 @@
   animation: headerNotifyGrowth ease-in 0.2s;
   will-change: opacity, transform;
   display: none;
+  z-index: 1;
 }
 
 .header__notify-header {
@@ -402,16 +403,113 @@
 }
 
 .header__search {
-  height: 40px;
   flex: 1;
+  height: 40px;
   background-color: var(--white-color);
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+}
+
+.header__search-input {
+  flex: 1;
+  height: 100%;
+  padding: 0 16px;
+  border-radius: 4px;
+
+  font-size: 1.4rem;
+  color: var(--text-color);
+  border: none;
+  outline: none;
+}
+.header__search-select {
+  display: flex;
+  align-items: center;
+  line-height: 2.6rem;
+
+  padding-left: 16px;
+  border-left: 1px solid #e8e8e8;
+  font-size: 1.4rem;
+
+  position: relative;
+}
+
+.header__search-select-icon {
+  color: #838383;
+  margin: 0 16px;
+}
+
+.header__search-option {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 130px;
+  margin: 12px 0;
+  border-radius: 4px;
+
+  box-shadow: var(--box-shadow);
+  list-style: none;
+  /* overflow: hidden; */
+  display: none;
+}
+
+.header__search-option-item::before {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  left: 0;
+  height: 20px;
+
+  display: block;
+  content: "";
+}
+
+.header__search-option-item {
+  background-color: var(--white-color);
+  font-size: 1.4rem;
+  display: block;
+  text-align: right;
+  padding: 8px 0;
+}
+
+.header__search-option-item:hover {
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+.header__search-option-item > i {
+  font-size: 1.2rem;
+  margin: 0 16px;
+  color: var(--primary-color);
+}
+
+.header__search-select:hover .header__search-option {
+  display: block;
+}
+
+.header__search-btn {
+  padding: 8px 24px;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  margin: 0 4px;
+}
+
+.header__search-btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.header__search-btn-icon {
+  color: var(--white-color);
+  font-size: 1.5rem;
 }
 
 .header__cart {
-  width: 150px;
   /* display: flex;
   justify-content: center;
   align-items: center; */
+  width: 150px;
   text-align: center;
 }
 
