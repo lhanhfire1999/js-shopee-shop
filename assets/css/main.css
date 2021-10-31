@@ -28,8 +28,7 @@
 
 .navbar__item,
 .navbar__item-link {
-  display: inline-block;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 300;
 
   color: var(--white-color);
@@ -66,6 +65,10 @@
   text-decoration: none;
 }
 
+.navbar__icon-link:nth-child(2) {
+  margin-left: 4px;
+}
+
 .navbar__icon {
   font-size: 1.8rem;
   margin: 0 4px;
@@ -86,7 +89,7 @@
   box-shadow: var(--box-shadow);
 }
 .navbar__user-name {
-  margin-left: 8px;
+  margin-left: 4px;
   font-size: 1.4rem;
   font-weight: 400;
 }
@@ -115,6 +118,10 @@
 .navbar__user-item a:hover {
   background-color: #fafafa;
   color: #00bfa5;
+}
+
+.navbar__user-item--separate {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* Angle */
@@ -209,6 +216,10 @@
   display: block;
 }
 
+.navbar__item--show-notify:hover > a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .header__notify::before {
   position: absolute;
   top: -32px;
@@ -224,11 +235,11 @@
 
 .header__notify::after {
   position: absolute;
-  top: -20px;
+  top: -15px;
   right: 0;
 
   height: 20px;
-  width: 88px;
+  left: 0;
 
   /* background-color: red; */
   content: "";
@@ -245,7 +256,7 @@
   background-color: var(--white-color);
   box-shadow: var(--box-shadow);
 
-  transform-origin: calc(100% - 20px) top; /*decision the point to scale*/
+  transform-origin: calc(100% - 32px) top; /*decision the point to scale*/
   animation: headerNotifyGrowth ease-in 0.2s;
   will-change: opacity, transform;
 
@@ -475,6 +486,11 @@
 .header__logo-img {
   width: 162px;
 }
+.header__logo-link {
+  text-decoration: none;
+  color: transparent;
+  display: inline-block;
+}
 
 .header__search {
   flex: 1;
@@ -564,12 +580,11 @@
 
 .header__search-option {
   position: absolute;
-  top: calc(100% + 12px);
+  top: calc(100% + 9px);
   right: 0;
   width: 135px;
   list-style: none;
 
-  z-index: 1;
   display: none;
 }
 
@@ -643,9 +658,6 @@
 
 /* Header cart */
 .header__cart {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   width: 150px;
   text-align: center;
 }
@@ -668,7 +680,7 @@
 
 .header__cart-container {
   position: absolute;
-  top: calc(100% + 2px);
+  top: calc(100% + 1px);
   right: -3px;
   width: 410px;
 
