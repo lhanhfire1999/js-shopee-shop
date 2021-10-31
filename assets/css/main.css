@@ -57,7 +57,7 @@
 .navbar__item,
 .navbar__item-link,
 .navbar__icon-link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 
@@ -71,9 +71,81 @@
   margin: 0 4px;
 }
 
-.navbar__title--no-poniter {
+.navbar__title--no-pointer {
   cursor: text;
   color: var(--white-color);
+}
+
+.navbar__user {
+  position: relative;
+}
+
+.navbar__user-img {
+  width: 22px;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+}
+.navbar__user-name {
+  margin-left: 8px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.navbar__user-list {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 150px;
+
+  border-radius: 4px;
+  list-style: none;
+  box-shadow: var(--box-shadow);
+
+  z-index: 1;
+  display: none;
+}
+.navbar__user-item a {
+  padding: 12px;
+  color: var(--text-color);
+  background-color: var(--white-color);
+  display: block;
+  text-decoration: none;
+}
+
+.navbar__user-item a:hover {
+  background-color: #fafafa;
+  color: #00bfa5;
+}
+
+/* Angle */
+.navbar__user-list::before {
+  position: absolute;
+  top: -30px;
+  right: 16px;
+
+  border-width: 20px 24px;
+  border-style: solid;
+  border-color: transparent transparent var(--white-color) transparent;
+
+  content: "";
+  display: block;
+}
+
+/* Bridge */
+.navbar__user-list::after {
+  position: absolute;
+  top: -12px;
+  right: 0;
+  left: 0;
+  height: 20px;
+  width: 100%;
+
+  display: block;
+  content: "";
+}
+
+.navbar__user:hover .navbar__user-list {
+  display: block;
 }
 
 /* Header QR */
