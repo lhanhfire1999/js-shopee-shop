@@ -45,7 +45,7 @@ html {
 /* Button Style */
 .btn {
   display: inline-block;
-  min-width: 145px;
+  min-width: 124px;
   padding: 12px 40px;
 
   border: none;
