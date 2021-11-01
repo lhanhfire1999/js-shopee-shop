@@ -172,6 +172,7 @@
   box-shadow: var(--box-shadow);
 
   animation: fateIn ease-in 0.3s;
+  z-index: 1;
   display: none;
 }
 
@@ -282,6 +283,7 @@
 }
 
 .header__notify-list {
+  list-style: none;
 }
 
 .header__notify-item {
@@ -326,9 +328,6 @@
   color: #757575;
 }
 
-.header__notify-footer {
-}
-
 .header__notify-footer-btn {
   display: block;
   padding: 8px 0;
@@ -370,11 +369,6 @@
   font-size: 1.6rem;
   color: var(--primary-color);
   cursor: pointer;
-}
-.auth-form__form {
-}
-
-.auth-form__group {
 }
 
 .auth-form__input {
