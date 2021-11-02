@@ -29,8 +29,7 @@ html {
 
 /* Responsive */
 .grid {
-  width: 1200px; /* vp */
-  max-width: 100%;
+  max-width: 1200px; /* vp */
   margin: 0 auto;
 }
 
