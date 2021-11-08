@@ -853,3 +853,49 @@
   float: right;
   margin: 12px;
 }
+
+/* Header sort bar */
+.header__sort-bar {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  right: 0;
+  height: var(--header-sort-bar-height);
+
+  list-style: none;
+  background-color: var(--white-color);
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+
+  display: none;
+}
+.header__sort-item {
+  flex: 1;
+  position: relative;
+}
+
+.header__sort-link {
+  display: block;
+  height: 100%;
+  line-height: var(--header-sort-bar-height);
+
+  text-align: center;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.header__sort-item:not(:first-child)::before {
+  display: block;
+  content: "";
+
+  position: absolute;
+  height: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.header__sort-item--active > .header__sort-link {
+  color: var(--primary-color);
+}
