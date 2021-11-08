@@ -28,16 +28,6 @@ html {
   box-sizing: border-box;
 }
 
-/* Responsive */
-.grid {
-  max-width: 1200px; /* vp */
-  margin: 0 auto;
-}
-
-.grid__full-width {
-  width: 100%;
-}
-
 .grid__row {
   display: flex;
   flex-wrap: wrap;

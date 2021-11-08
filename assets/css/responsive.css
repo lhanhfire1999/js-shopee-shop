@@ -1,0 +1,33 @@
+/* Mobile & Tablet */
+@media only screen and (max-width: 63.9375em) {
+  :root {
+    --hearder-height: 68px;
+    --navbar-height: 0px;
+  }
+
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .header__logo-img {
+    width: 100px;
+  }
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+  .hide-on-tablet {
+    display: none;
+  }
+
+  .header__cart {
+    width: 80px;
+    text-align: right;
+  }
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+  .hide-on-mobile {
+    display: none;
+  }
+}

@@ -477,7 +477,7 @@
 }
 
 .header__logo {
-  width: 200px;
+  margin-right: 40px;
   cursor: pointer;
 }
 
