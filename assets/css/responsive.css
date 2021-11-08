@@ -1,7 +1,7 @@
 /* Mobile & Tablet */
 @media only screen and (max-width: 63.9375em) {
   :root {
-    --hearder-height: 68px;
+    --header-height: 68px;
     --navbar-height: 0px;
   }
 
@@ -9,7 +9,21 @@
     display: none;
   }
   .header__logo-img {
-    width: 100px;
+    width: 92px;
+    margin-right: 20px;
+  }
+
+  .header__cart-container {
+    position: fixed;
+    top: var(--header-height);
+    width: 100%;
+    right: 0;
+  }
+  .header__cart-container::after {
+    display: none;
+  }
+  .header__cart-list {
+    max-height: 22vh;
   }
 }
 

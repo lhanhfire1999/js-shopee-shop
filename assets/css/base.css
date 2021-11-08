@@ -8,10 +8,10 @@
   --border-color: #dbdbdb;
   --box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 
-  --hearder-height: 120px;
+  --header-height: 120px;
   --navbar-height: 34px;
   --header-with-search-height: calc(
-    var(--hearder-height) - var(--navbar-height)
+    var(--header-height) - var(--navbar-height)
   );
 }
 
