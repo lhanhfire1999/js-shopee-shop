@@ -518,6 +518,17 @@
   outline: none;
 }
 
+/* Header mobile search */
+.header__mobile-search {
+  padding: 8px;
+  cursor: pointer;
+  display: none;
+}
+.header__mobile-search-icon {
+  font-size: 2.6rem;
+  color: var(--white-color);
+}
+
 /*Header Search history */
 .header__search-input:focus ~ .header__search-history {
   display: block;
