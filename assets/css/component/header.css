@@ -682,6 +682,7 @@
   padding: 8px;
   position: relative;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .header__cart-icon {
@@ -913,4 +914,5 @@
 
 .header__sort-item--active > .header__sort-link {
   color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
 }
