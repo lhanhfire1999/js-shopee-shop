@@ -442,7 +442,9 @@ i.home-product-item__like-fill {
 
   display: block;
 }
-.pagination-item__icon {
+
+.app__content {
+  margin: 0 4px;
 }
 
 .home-product__pagination {

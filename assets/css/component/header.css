@@ -1,3 +1,6 @@
+.app {
+  overflow: hidden;
+}
 .header {
   height: var(--header-height);
   background-image: linear-gradient(0, #fe6432, #fe6532);
@@ -474,6 +477,7 @@
   flex-flow: row nowrap;
   align-items: center;
   height: var(--header-with-search-height);
+  margin: 0 8px;
 }
 
 .header__logo {
@@ -757,7 +761,7 @@
 .header__cart-notice {
   position: absolute;
   top: -4px;
-  right: -4px;
+  right: 0px;
 
   padding: 1px 7px;
   border-radius: 50px;
