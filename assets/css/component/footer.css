@@ -3,6 +3,10 @@
   border-top: 4px solid var(--primary-color);
   padding-top: 32px;
 }
+
+.footer__content-item {
+  margin-top: 28px;
+}
 .footer__heading {
   text-transform: uppercase;
   font-size: 1.4rem;
