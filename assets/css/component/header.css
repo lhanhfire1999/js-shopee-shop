@@ -354,6 +354,11 @@
   width: 500px;
   background-color: var(--white-color);
   border-radius: 5px;
+  display: none;
+}
+
+.auth-form.open {
+  display: block;
 }
 
 .auth-form__container {
